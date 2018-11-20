@@ -1,24 +1,32 @@
-# README
+# Project : Javascript et jquery
+### Project Week 8, Day 2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Les membres de la team : @Elmousski, @Joelthp, @Emilie5520, @MattMonta and @CharlotteHouivet.
 
-Things you may want to cover:
+### Mission
 
-* Ruby version
+- Construire des tabs
+- Contruire un caroussel
+- Construire un login + modal
 
-* System dependencies
+### How to execute the program ? 
 
-* Configuration
+1. Clone this repository
 
-* Database creation
+2. Install all the gems
+```sh
+$ bundle install
+```
+3. Migrate db files
+```sh
+$ rails db:migrate
+```
+4. Execute seed file
+```sh
+$ rails db:seed
+```
+6. Visit the [online version](https://jqueryrw.herokuapp.com/)
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# En cadeau un doggo beaucoup trop stylé
+![alt text](http://image.noelshack.com/fichiers/2018/46/2/1542129946-28ywvs.jpg)
