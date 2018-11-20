@@ -1,0 +1,49 @@
+<h1 class="text-center mb-4">Welcome to my todolist app</h1>
+</br>
+
+
+<%= render 'layouts/task_form'  %>
+<center><div class="container">
+<ul class="tabs">  <% @categories.each do  |category|%>
+    <li class="tab-link current" data-tab="tab-<%= category.id  %>"><%= category.title  %></li><% end %> 
+  </ul>
+
+      <% @categories.each do  |category| %>
+  <div id="tab-<%= category.id  %>" class="tab-content current">
+    <% category.tasks.each do |task|  %>
+         <%= task.title  %>
+        <% unless task.deadline.nil? %>
+          , to read: <%= task.deadline.strftime('%D')  %></br>
+      <% end %>
+      <% end %> 
+  </div></div>
+  <% end %>
+</div></center>
+
+</br></br>
+
+
+ <div id="slideshow-container">
+      <div id="slideshow">
+        <div id="slideshow-reel">
+          <div id="carrousel">
+            <ul>
+              <li><img src="http://image.noelshack.com/fichiers/2018/47/2/1542712493-car1.jpg"></li>
+              <li><img src="http://image.noelshack.com/fichiers/2018/47/2/1542712496-car2.jpg"></li>
+              <li><img src="http://image.noelshack.com/fichiers/2018/47/2/1542712499-car3.jpg"></li>
+              <li><img src="http://image.noelshack.com/fichiers/2018/47/2/1542719568-car4.jpg"></li>
+            </ul>
+          </div>
+        </div>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentImg(1)"></span> 
+          <span class="dot" onclick="currentImg(2)"></span> 
+          <span class="dot" onclick="currentImg(3)"></span> 
+        </div>
+      </div>
+    </div>
+</br>
+
+
+</div>
